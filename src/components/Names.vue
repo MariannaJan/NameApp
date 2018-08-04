@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
       <div class="holder">
+        
         <form @submit.prevent="addName">
           <input type="text" placeholder="Input the name" v-model="name" v-validate="'min:3'" name="name">
           <transition name="alert-in" enter-active-class="animated flipInX" leave-active-class="animated flipOutX">  
@@ -73,9 +74,6 @@ p {
   color: gray;
 }
 
-.container {
-  box-shadow: 0px 0px 40px lightgray;
-}
 input {
   width: calc(100% - 40px);
   border: 0;

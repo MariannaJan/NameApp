@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <nav class="btn-group btn-group-lg" role="group">
-      <router-link to="/" class="btn btn-secondary">Home</router-link>
-      <router-link to="/about" class="btn btn-secondary">About</router-link>
+    <nav role="group">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
     </nav>
-
     <router-view />
   </div>
 </template>
@@ -22,7 +21,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
 
 body {
   background-color: #EEEEEE;
@@ -54,3 +52,4 @@ body, html {
     width: 50%;
 }
 </style>
+
